@@ -1,0 +1,1 @@
+﻿Get-WmiObject win32_operatingsystem |select @{Name="Last Boot Time"; Expression={$_.ConvertToDateTime($_.LastBootUpTime)}}, PSComputerName
